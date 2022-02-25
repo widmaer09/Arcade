@@ -1,11 +1,10 @@
-
 public class Players {
-    public  String player;
+    public String player;
 
-    public  String playerValue;
+    public String playerValue;
 
-    public Players(String player,String playerValue) {
+    public Players(String player, String playerValue) {
         this.player = player;
-        this.playerValue= playerValue;
+        this.playerValue = playerValue;
     }
 }

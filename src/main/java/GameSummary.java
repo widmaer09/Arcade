@@ -31,7 +31,7 @@ public class GameSummary {
         this.winner = winner;
     }
 
-    public GameSummary(String player1,String player2, String winner) {
+    public GameSummary(String player1, String player2, String winner) {
         setPlayer1(player1);
         setPlayer2(player2);
         setWinner(winner);
@@ -45,7 +45,6 @@ public class GameSummary {
                 ", winner='" + winner + '\'' +
                 '}';
     }
-
 
 
 }

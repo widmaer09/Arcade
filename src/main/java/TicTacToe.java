@@ -3,8 +3,8 @@ import java.util.Arrays;
 
 public class TicTacToe extends GameBoardAbstract implements GameBoardView {
 
-    public static String token1= "x | ";
-    public static String token2= "o | ";
+    public static String token1 = "x | ";
+    public static String token2 = "o | ";
 
     private GamePiece[] gameBoard = new GamePiece[12];
 
@@ -14,10 +14,6 @@ public class TicTacToe extends GameBoardAbstract implements GameBoardView {
 
     public static int tictactoeposition = 0;
 
-    @Override
-    public void setGameBoard(GamePiece[] gameBoard) {
-        this.gameBoard = gameBoard;
-    }
 
     @Override
     public void assembleGameBoard(GamePiece[] gameBoard) {
@@ -35,7 +31,8 @@ public class TicTacToe extends GameBoardAbstract implements GameBoardView {
     }
 
     @Override
-    public void changeValue(GamePiece[] gameBoard, int id, Players currentPlayer) {// this will be able to interact with the array
+    public void changeValue(GamePiece[] gameBoard, int id, Players currentPlayer) {
+        // this will be able to interact with the array
         for (GamePiece row : gameBoard) {
             if (row.getId() == id && !(row.getValue() == token1) && !(row.getValue() == token2)) {
                 row.setValue(currentPlayer.playerValue);
@@ -54,12 +51,13 @@ public class TicTacToe extends GameBoardAbstract implements GameBoardView {
         return toArray;
     }
 
-    @Override//turn this into a game piece
+    @Override
     public void printGameBoard(GamePiece[] gameBoard) {
         Arrays.stream(gameBoard).forEach(System.out::println);
     }
 
-    public TicTacToe() {//this constructor just makes a tic tac toe board that you interact with
+    public TicTacToe() {
+        //this constructor just makes a tic tac toe board that you interact with
         assembleGameBoard(gameBoard);
 
     }

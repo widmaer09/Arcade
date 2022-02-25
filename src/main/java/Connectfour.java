@@ -7,24 +7,20 @@ public class Connectfour extends GameBoardAbstract implements GameBoardView {
 
     public static String token1 = "X  | ";
     public static String token2 = "O  | ";
-    public static  String boarder ="==+===+===+===+===+===+===+===+===";
-    public static String gameName="connectfour";
+    public static String boarder = "==+===+===+===+===+===+===+===+===";
+    public static String gameName = "connectfour";
 
     @Override
     public GamePiece[] getGameBoard() {
         return gameBoard;
     }
 
-    @Override
-    public void setGameBoard(GamePiece[] gameBoard) {
-        this.gameBoard = gameBoard;
 
-    }
 
     @Override
     public void assembleGameBoard(GamePiece[] gameBoard) {
         for (int i = 0; i < gameBoard.length; i++) {
-            if (    i == 0
+            if (i == 0
                     || i == 8
                     || i == 16
                     || i == 24

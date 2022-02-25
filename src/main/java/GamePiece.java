@@ -1,7 +1,7 @@
 public class GamePiece {
     private String value;
     private int id;
-    private String game;
+    private final String game;
 
     public String getGame() {
         return game;

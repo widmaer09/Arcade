@@ -15,8 +15,8 @@ class ConnectfourTest {
         for (int i = 0; i < game3.toArray(game3.getGameBoard()).size(); i++) {
             toArray[i] = game3.toArray(game3.getGameBoard()).get(i);
         }
-        Players player1 = new Players("wid","o | ");
-        game3.changeValue(game3.getGameBoard(), gridID,player1);
+        Players player1 = new Players("wid", "o | ");
+        game3.changeValue(game3.getGameBoard(), gridID, player1);
         assertEquals("o | ", toArray[gridID].toString());
     }
 }
