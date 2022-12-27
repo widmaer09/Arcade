@@ -7,7 +7,7 @@
 
 
 - Tic Tac Toe
-- Connect 4(soon to come)
+- Connect 4
 
 
 
